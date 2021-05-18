@@ -1,5 +1,7 @@
 addEventListener("submit", (e) => e.preventDefault());
 
+// EXERCICE 1.1
+
 const ex1_1_form = document.getElementById("ex1_1");
 const ex1_1_input = document.getElementById("input1_1");
 
@@ -20,6 +22,8 @@ function calculatrice(calcul) {
 
 ex1_1_form.addEventListener("submit", () => calculatrice(ex1_1_input.value));
 
+// EXERCICE 1.2
+
 const ex1_2_form = document.getElementById("ex1_2");
 const ex1_2_input = document.getElementById("input1_2");
 const ex1_2B_input = document.getElementById("input1_2B");
@@ -31,6 +35,8 @@ function swap() {
 }
 
 ex1_2_form.addEventListener("submit", swap);
+
+// EXERCICE 1.3
 
 const ex1_3_form = document.getElementById("ex1_3");
 const ex1_3_input = document.getElementById("input1_3");
@@ -50,6 +56,8 @@ function maximum() {
 
 ex1_3_form.addEventListener("submit", maximum);
 
+// EXERCICE 2
+
 const ex2_form = document.getElementById("ex2");
 const ex2_input = document.getElementById("input2");
 const myrect = document.getElementById("lerectangle");
@@ -68,6 +76,8 @@ function rectangleCaculation() {
 
 ex2_form.addEventListener("submit", rectangleCaculation);
 
+// EXERCICE 3
+
 const ex3_form = document.getElementById("ex3");
 const ex3_input = document.getElementById("input3");
 
@@ -81,6 +91,8 @@ function circleCalculation() {
 
 ex3_form.addEventListener("submit", circleCalculation);
 
+// EXERCICE 4
+
 const ex4_form = document.getElementById("ex4");
 const ex4_input = document.getElementById("input4");
 
@@ -92,6 +104,8 @@ ex4_form.addEventListener("submit", () => {
       ? `Wow ${ex4_input.value} ans ,tu es majeur !`
       : `${ex4_input.value} ans c'est trop jeune !`;
 });
+
+// EXERCICE 5
 
 const ex5_form = document.getElementById("ex5");
 const ex5_input = document.getElementById("input5");
@@ -162,6 +176,8 @@ ex5_form.addEventListener("submit", () => {
   }
 });
 
+// EXERCICE 6
+
 const ex6_form = document.getElementById("ex6");
 const ex6_input = document.getElementById("input6");
 
@@ -188,6 +204,8 @@ ex6_form.addEventListener("submit", () => {
     return (ex6_input.value = `Il y a 28 jours en ${month}`);
   ex6_input.value = `Mois ${month} invalide`;
 });
+
+// EXERCICE 7 // USING  P5.js to draw a rectangle and detect if mouse inside
 
 let sketch = function (p) {
   let x = 0;

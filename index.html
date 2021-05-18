@@ -2,7 +2,6 @@
 <html lang="en" style="font-family: 'Lato', sans-serif">
   <head>
     <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Lab3 - Wasselet</title>
     <link rel="preconnect" href="https://fonts.gstatic.com" />
@@ -13,23 +12,19 @@
     <script src="https://cdn.jsdelivr.net/npm/p5@1.3.1/lib/p5.js"></script>
     <script src="index.js" defer></script>
   </head>
-  <body>
-    <h1 style="text-align: center; margin-bottom: 3em">
-      Laboratoire 3 - Martin Wasselet
-    </h1>
-
+  <body style="display: flex; flex-direction: column; align-items: center">
     <style>
       .input-field {
-        width: 400px;
+        width: 640px;
       }
-      .form-button {
-        width: 200px;
+      form input {
+        font-size: 16px;
       }
     </style>
 
     <div
       style="
-        margin-left: 20px;
+        margin-top: 40px;
         padding: 20px;
         border: black 1px solid;
         border-radius: 10px;
@@ -37,6 +32,10 @@
         box-shadow: blue 20px 20px;
       "
     >
+      <h1 style="text-align: center; margin-bottom: 1.5em">
+        Laboratoire 3 - Martin Wasselet
+      </h1>
+
       <h2>Exercice 1.1 - Calculatrice</h2>
 
       <form action="" id="ex1_1">
@@ -47,7 +46,7 @@
           placeholder="Entrez une operation"
           class="input-field"
         />
-        <input type="submit" value="Calcul" />
+        <input type="submit" value="💰" />
       </form>
 
       <h2>Exercice 1.2 - Variable Swap</h2>
@@ -67,7 +66,7 @@
           placeholder="Type anything for variable B"
           class="input-field"
         />
-        <input type="submit" value="Swap" class="form-button" />
+        <input type="submit" value="🔀" />
       </form>
       <h2>Exercice 1.3 - Maximum</h2>
       <form action="" id="ex1_3">
@@ -78,7 +77,7 @@
           placeholder="Entrez plusieurs chiffres separes par des espaces"
           class="input-field"
         />
-        <input type="submit" value="Get max" />
+        <input type="submit" value="🔝" />
       </form>
 
       <h2>Exercice 2 - Rectangle</h2>
@@ -90,7 +89,7 @@
           placeholder="Entrez les dimensions du rectangle en pixels selon ce format : LxW"
           class="input-field"
         />
-        <input type="submit" value="Give me a rectangle" />
+        <input type="submit" value="🆗" />
       </form>
       <div id="lerectangle" style="margin-top: 20px"></div>
 
@@ -103,7 +102,7 @@
           placeholder="Entrez le rayon d'un cercle"
           class="input-field"
         />
-        <input type="submit" value="🥧 " />
+        <input type="submit" value="🥧" />
       </form>
 
       <h2>Exercice 4 - Are you old enough ?</h2>
@@ -115,7 +114,7 @@
           placeholder="Entrez votre age"
           class="input-field"
         />
-        <input type="submit" value="Send " />
+        <input type="submit" value="🔞" />
       </form>
 
       <h2>Exercice 5 - Month Switch ?</h2>
@@ -127,7 +126,7 @@
           placeholder="Entrez un chiffre entre 1 et 12"
           class="input-field"
         />
-        <input type="submit" value="Send " />
+        <input type="submit" value="📅" />
       </form>
 
       <h2>Exercice 6 - Combien de jour dans ce mois ?</h2>
@@ -139,9 +138,9 @@
           placeholder="Entrez un mois"
           class="input-field"
         />
-        <input type="submit" value="Send " />
+        <input type="submit" value="📆" />
       </form>
-      <h2>Exercice 7 - Danger Zone</h2>
+      <h2>Exercice 7 - 🎸Danger Zone 🔥</h2>
       <div id="container"></div>
     </div>
   </body>
